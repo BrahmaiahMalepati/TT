@@ -1,0 +1,98 @@
+{
+  "$schema" : "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "id" : "http://wso2jsonschema.org",
+  "title" : "root",
+  "type" : "object",
+  "properties" : {
+    "CelEaiGenericServiceRequest" : {
+      "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest",
+      "type" : "object",
+      "properties" : {
+        "Id" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/Id",
+          "type" : "string"
+        },
+        "Created" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/Created",
+          "type" : "string"
+        },
+        "AccountId" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/AccountId",
+          "type" : "string"
+        },
+        "Area" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/Area",
+          "type" : "string"
+        },
+        "ReferenceNumber" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/ReferenceNumber",
+          "type" : "string"
+        },
+        "Region" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/Region",
+          "type" : "string"
+        },
+        "ServiceNumber" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/ServiceNumber",
+          "type" : "string"
+        },
+        "RequestedAmount" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/RequestedAmount",
+          "type" : "string"
+        },
+        "Source" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/Source",
+          "type" : "string"
+        },
+        "Status" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/Status",
+          "type" : "string"
+        },
+        "SubArea" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/SubArea",
+          "type" : "string"
+        },
+        "Type" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/Type",
+          "type" : "string"
+        },
+        "Owner" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/Owner",
+          "type" : "string"
+        },
+        "OutletId" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/OutletId",
+          "type" : "string"
+        },
+        "SRAccountID" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/SRAccountID",
+          "type" : "string"
+        },
+        "SRAccountType" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/SRAccountType",
+          "type" : "string"
+        },
+        "SRAging" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/SRAging",
+          "type" : "string"
+        },
+        "OwnerGroup" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/OwnerGroup",
+          "type" : "string"
+        },
+        "CreatorFullName" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/CreatorFullName",
+          "type" : "string"
+        },
+        "OwnerFullName" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/OwnerFullName",
+          "type" : "string"
+        },
+        "CreatedByLogin" : {
+          "id" : "http://wso2jsonschema.org/CelEaiGenericServiceRequest/CreatedByLogin",
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

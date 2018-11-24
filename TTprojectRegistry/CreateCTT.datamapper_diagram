@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:datamapper="http:///org/wso2/developerstudio/eclipse/gmf/datamapper" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_7rYPkKtcEei1l7KnfJBd7w" type="DataMapper" name="CreateCTT.datamapper_diagram" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_7rYPkatcEei1l7KnfJBd7w"/>
+  <element xmi:type="datamapper:DataMapperRoot" href="CreateCTT.datamapper#/"/>
+</notation:Diagram>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="QueryCTTEndpoint" xmlns="http://ws.apache.org/ns/synapse">
+    <wsdl port="SRTTListRetrieveWSDL_port" service="SRTTListRetrieveWSDL_service" uri="http://sitc3-osb.celcom.com.my:8101/Telco_OSB_Impl/SRTTListRetrieveWSDLReceiver?wsdl"/>
+</endpoint>

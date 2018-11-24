@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datamapper:DataMapperRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:datamapper="http:///org/wso2/developerstudio/eclipse/gmf/datamapper">
+  <input>
+    <treeNode name="CelQueryPage_Output" schemaDataType="OBJECT" level="1">
+      <node name="@ErrorCode" schemaDataType="NULL" level="2">
+        <properties key="type" value="null"/>
+        <properties key="id" value="http://wso2jsonschema.org/ErrorCode"/>
+        <properties key="nullable" value="false"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <node name="@ErrorMessage" schemaDataType="NULL" level="2">
+        <properties key="type" value="null"/>
+        <properties key="id" value="http://wso2jsonschema.org/ErrorMessage"/>
+        <properties key="nullable" value="false"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <node name="LastPage" schemaDataType="BOOLEAN" level="2">
+        <properties key="type" value="boolean"/>
+        <properties key="id" value="http://wso2jsonschema.org/LastPage"/>
+        <properties key="nullable" value="false"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <node name="ListOfCeleaigenericservicerequestout" schemaDataType="OBJECT" level="2">
+        <node name="CelEaiGenericServiceRequest" schemaDataType="OBJECT" level="3">
+          <node name="Id" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Id"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink/>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.0/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="Created" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Created"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink/>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.1/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="AccountId" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/AccountId"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.2/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="Area" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Area"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.3/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="ReferenceNumber" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/ReferenceNumber"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.4/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="Region" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Region"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.5/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="ServiceNumber" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/ServiceNumber"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.6/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="RequestedAmount" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/RequestedAmount"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.7/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="Source" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Source"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.8/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="Status" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Status"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.9/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="Sub-Area" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Sub-Area"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.10/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="Type" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Type"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.11/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="Owner" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Owner"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.12/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="OutletId" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/OutletId"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.13/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="SRAccountID" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/SRAccountID"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.14/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="SRAccountType" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/SRAccountType"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.15/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="SRAging" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/SRAging"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.16/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="OwnerGroup" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/OwnerGroup"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.17/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="CreatorFullName" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/CreatorFullName"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.18/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="OwnerFullName" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/OwnerFullName"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.19/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <node name="CreatedByLogin" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/CreatedByLogin"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.20/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <properties key="type" value="object"/>
+          <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest"/>
+          <properties key="nullable" value="false"/>
+          <properties key="properties_id" value="{Id={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Id, type=string}, Created={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Created, type=string}, AccountId={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/AccountId, type=string}, Area={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Area, type=string}, ReferenceNumber={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/ReferenceNumber, type=string}, Region={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Region, type=string}, ServiceNumber={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/ServiceNumber, type=string}, RequestedAmount={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/RequestedAmount, type=string}, Source={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Source, type=string}, Status={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Status, type=string}, Sub-Area={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Sub-Area, type=string}, Type={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Type, type=string}, Owner={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Owner, type=string}, OutletId={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/OutletId, type=string}, SRAccountID={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/SRAccountID, type=string}, SRAccountType={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/SRAccountType, type=string}, SRAging={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/SRAging, type=string}, OwnerGroup={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/OwnerGroup, type=string}, CreatorFullName={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/CreatorFullName, type=string}, OwnerFullName={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/OwnerFullName, type=string}, CreatedByLogin={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/CreatedByLogin, type=string}}"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout"/>
+        <properties key="nullable" value="false"/>
+        <properties key="properties_id" value="{CelEaiGenericServiceRequest={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest, type=object, properties={Id={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Id, type=string}, Created={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Created, type=string}, AccountId={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/AccountId, type=string}, Area={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Area, type=string}, ReferenceNumber={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/ReferenceNumber, type=string}, Region={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Region, type=string}, ServiceNumber={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/ServiceNumber, type=string}, RequestedAmount={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/RequestedAmount, type=string}, Source={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Source, type=string}, Status={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Status, type=string}, Sub-Area={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Sub-Area, type=string}, Type={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Type, type=string}, Owner={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Owner, type=string}, OutletId={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/OutletId, type=string}, SRAccountID={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/SRAccountID, type=string}, SRAccountType={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/SRAccountType, type=string}, SRAging={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/SRAging, type=string}, OwnerGroup={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/OwnerGroup, type=string}, CreatorFullName={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/CreatorFullName, type=string}, OwnerFullName={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/OwnerFullName, type=string}, CreatedByLogin={id=http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/CreatedByLogin, type=string}}}}"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <properties key="type" value="object"/>
+      <properties key="$schema" value="http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#"/>
+      <properties key="id" value="http://wso2jsonschema.org"/>
+      <properties key="nullable" value="false"/>
+      <properties key="attribute_id" value="{attribute_id=[http://wso2jsonschema.org/ErrorCode, http://wso2jsonschema.org/ErrorMessage]}"/>
+      <properties key="attribute_type" value="{attribute_type=[null, null]}"/>
+      <outNode/>
+      <inNode/>
+    </treeNode>
+  </input>
+  <output>
+    <treeNode name="root" schemaDataType="OBJECT" level="1">
+      <node name="CelEaiGenericServiceRequest" schemaDataType="OBJECT" level="2">
+        <node name="Id" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/Id"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.0/@outNode/@outgoingLink.1"/>
+        </node>
+        <node name="Created" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/Created"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.1/@outNode/@outgoingLink.1"/>
+        </node>
+        <node name="AccountId" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/AccountId"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.2/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="Area" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/Area"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.3/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="ReferenceNumber" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/ReferenceNumber"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.4/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="Region" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/Region"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.5/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="ServiceNumber" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/ServiceNumber"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.6/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="RequestedAmount" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/RequestedAmount"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.7/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="Source" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/Source"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.8/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="Status" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/Status"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.9/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="SubArea" schemaDataType="STRING" level="3">
+          <properties key="$schema" value="http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#"/>
+          <properties key="nullable" value="false"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/SubArea"/>
+          <properties key="type" value="string"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.10/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="Type" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/Type"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.11/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="Owner" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/Owner"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.12/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="OutletId" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/OutletId"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.13/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="SRAccountID" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/SRAccountID"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.14/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="SRAccountType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/SRAccountType"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.15/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="SRAging" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/SRAging"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.16/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="OwnerGroup" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/OwnerGroup"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.17/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="CreatorFullName" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/CreatorFullName"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.18/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="OwnerFullName" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/OwnerFullName"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.19/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="CreatedByLogin" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest/CreatedByLogin"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.3/@node.0/@node.20/@outNode/@outgoingLink.0"/>
+        </node>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/CelEaiGenericServiceRequest"/>
+        <properties key="nullable" value="false"/>
+        <properties key="properties_id" value="{Id={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/Id, type=string}, Created={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/Created, type=string}, AccountId={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/AccountId, type=string}, Area={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/Area, type=string}, ReferenceNumber={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/ReferenceNumber, type=string}, Region={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/Region, type=string}, ServiceNumber={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/ServiceNumber, type=string}, RequestedAmount={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/RequestedAmount, type=string}, Source={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/Source, type=string}, Status={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/Status, type=string}, Sub-Area={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/Sub-Area, type=string}, Type={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/Type, type=string}, Owner={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/Owner, type=string}, OutletId={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/OutletId, type=string}, SRAccountID={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/SRAccountID, type=string}, SRAccountType={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/SRAccountType, type=string}, SRAging={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/SRAging, type=string}, OwnerGroup={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/OwnerGroup, type=string}, CreatorFullName={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/CreatorFullName, type=string}, OwnerFullName={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/OwnerFullName, type=string}, CreatedByLogin={id=http://wso2jsonschema.org/CelEaiGenericServiceRequest/CreatedByLogin, type=string}}"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <properties key="type" value="object"/>
+      <properties key="$schema" value="http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#"/>
+      <properties key="id" value="http://wso2jsonschema.org"/>
+      <properties key="nullable" value="false"/>
+      <outNode/>
+      <inNode/>
+    </treeNode>
+  </output>
+</datamapper:DataMapperRoot>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/ticket/v1" name="CTT" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" url-mapping="/createctt">
+        <inSequence>
+            <property expression="json-eval($.CelTroubleTicketIntegration.Area)" name="Area" scope="default" type="STRING"/>
+            <property expression="json-eval($.CelTroubleTicketIntegration.CELBranchDealerId)" name="CELBranchDealerId" scope="default" type="STRING"/>
+            <property expression="json-eval($.CelTroubleTicketIntegration.Description)" name="Description" scope="default" type="STRING"/>
+            <property expression="json-eval($.CelTroubleTicketIntegration.PrimarySymptomCode)" name="PrimarySymptomCode" scope="default" type="STRING"/>
+            <property expression="json-eval($.CelTroubleTicketIntegration.ServiceNumber)" name="ServiceNumber" scope="default" type="STRING"/>
+            <property expression="json-eval($.CelTroubleTicketIntegration.Status)" name="Status" scope="default" type="STRING"/>
+            <property expression="json-eval($.CelTroubleTicketIntegration.SubArea)" name="SubArea" scope="default" type="STRING"/>
+            <property expression="json-eval($.CelTroubleTicketIntegration.CreatedBy)" name="CreatedBy" scope="default" type="STRING"/>
+            <script description="Script Mediator" function="ValidateCTT" key="gov:datamapper/CTTvalidation.js" language="js"/>
+            <filter regex="false" source="$ctx:isValidCtt">
+                <then>
+                    <log level="custom">
+                        <property name="endUserId null" value="endUserId null"/>
+                    </log>
+                    <property name="HTTP_SC" scope="axis2" type="STRING" value="400"/>
+                    <property name="HTTP_SC_DESC" scope="axis2" type="STRING" value="Bad Request"/>
+                    <property name="messageId" scope="default" type="STRING" value="SVC0001"/>
+                    <property name="text" scope="default" type="STRING" value="Missing Mandatory Parameters"/>
+                    <sequence description="" key="CTTErrorResponseSequence"/>
+                    <respond/>
+                </then>
+                <else>
+                    <log description="After Payload transformation" level="full"/>
+                    <payloadFactory description="XMLPayload" media-type="xml">
+                        <format>
+                            <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ttc="http://osb.celcom.com/TTCreateWSDL/">
+                                <soapenv:Header/>
+                                <soapenv:Body>
+                                    <ttc:TTCreate_Input>
+                                        <ListOfCeltroubleticketintegration>
+                                            <CelTroubleTicketIntegration>
+                                                <CPName>$1</CPName>
+                                                <ContentName>$2</ContentName>
+                                                <ShortCode>$3</ShortCode>
+                                                <AccountId>$4</AccountId>
+                                                <Area>$5</Area>
+                                                <CELBranchDealerId>$6</CELBranchDealerId>
+                                                <CELNetworkIndicator>$7</CELNetworkIndicator>
+                                                <CELState>$8</CELState>
+                                                <ContactId>$9</ContactId>
+                                                <Description>$10</Description>
+                                                <PrimarySymptomCode>$11</PrimarySymptomCode>
+                                                <DomesticRoamingType>$12</DomesticRoamingType>
+                                                <CELCallTextType>$13</CELCallTextType>
+                                                <CELVASType>$14</CELVASType>
+                                                <ServiceNumber>$15</ServiceNumber>
+                                                <SRType>$16</SRType>
+                                                <Status>$17</Status>
+                                                <Sub-Area>$18</Sub-Area>
+                                                <TTSource>$19</TTSource>
+                                                <CELCity>$20</CELCity>
+                                                <CreatedBy>$21</CreatedBy>
+                                                <!--Optional:-->
+                                                <CTTOrderId>$22</CTTOrderId>
+                                                <!--Optional:-->
+                                                <Channel>$23</Channel>
+                                                <!--Optional:-->
+                                                <CampaignPromoType>$24</CampaignPromoType>
+                                                <!--Optional:-->
+                                                <CampaignPromoSMS>$25</CampaignPromoSMS>
+                                                <!--Optional:-->
+                                                <CampaignPromoRewards>$26</CampaignPromoRewards>
+                                                <!--Optional:-->
+                                                <CampaignPromo>$27</CampaignPromo>
+                                                <!--Optional:-->
+                                                <CampaignDate>$28</CampaignDate>
+                                                <!--Optional:-->
+                                                <CTTOrderNumber>$29</CTTOrderNumber>
+                                                <!--Optional:-->
+                                                <CTTTypeOfFailure>$30</CTTTypeOfFailure>
+                                                <!--Optional:-->
+                                                <CELPhoneDeviceOS>$31</CELPhoneDeviceOS>
+                                                <!--Optional:-->
+                                                <CELCountry>$32</CELCountry>
+                                                <!--Optional:-->
+                                                <CELDeviceConfiguration>$33</CELDeviceConfiguration>
+                                            </CelTroubleTicketIntegration>
+                                        </ListOfCeltroubleticketintegration>
+                                    </ttc:TTCreate_Input>
+                                </soapenv:Body>
+                            </soapenv:Envelope>
+                        </format>
+                        <args>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CPName" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.ContentName" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.ShortCode" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.AccountId" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.Area" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CELBranchDealerId" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CELNetworkIndicator" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CELState" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.ContactId" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.Description" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.PrimarySymptomCode" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.DomesticRoamingType" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CELCallTextType" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CELVASType" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.ServiceNumber" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.SRType" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.Status" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.Sub-Area" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.TTSource" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CELCity" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CreatedBy" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CTTOrderId" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.Channel" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CampaignPromoType" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CampaignPromoSMS" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CampaignPromoRewards" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CampaignPromo" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CampaignDate" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CTTOrderNumber" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CTTTypeOfFailure" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CELPhoneDeviceOS" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CELCountry" literal="true"/>
+                            <arg evaluator="json" expression="$.CelTroubleTicketIntegration.CELDeviceConfiguration" literal="true"/>
+                        </args>
+                    </payloadFactory>
+                    <header name="SOAPAction" scope="transport" value="http://www.webserviceX.NET/GetWeather"/>
+                    <property name="messageType" scope="axis2" type="STRING" value="application/text+xml"/>
+                    <property name="HTTP_METHOD" scope="axis2" type="STRING" value="POST"/>
+                    <property action="remove" name="REST_URL_POSTFIX" scope="axis2"/>
+                    <log>
+                        <property name="property_name" value="Going to Connect End Point"/>
+                    </log>
+                    <send description="">
+                        <endpoint key="CreateCTTEndPoint"/>
+                    </send>
+                </else>
+            </filter>
+        </inSequence>
+        <outSequence>
+            <log>
+                <property name="property_name" value="Entered in to OutSquence"/>
+            </log>
+            <xslt key="CTTNameSpaceRemovalFromResponseXSLT"/>
+            <filter description="" regex="^$" source="string(//TTCreate_Output/ListOfCeltroubleticketintegration/CelTroubleTicketIntegration/Id)">
+                <then>
+                    <log>
+                        <property name="property_name" value="Failure Path in Filter"/>
+                    </log>
+                    <property name="HTTP_SC" scope="axis2" type="STRING" value="400"/>
+                    <property name="HTTP_SC_DESC" scope="axis2" type="STRING" value="Bad Request"/>
+                    <property expression="fn:concat(SVC0099-,string(//fault/errorCode))" name="messageId" scope="default" type="STRING"/>
+                    <property expression="string(//fault/reason)" name="text" scope="default" type="STRING"/>
+                    <sequence key="CTTErrorResponseSequence"/>
+                    <respond/>
+                </then>
+                <else>
+                    <log>
+                        <property name="property_name" value="Success Path in Filter"/>
+                    </log>
+                    <property name="HTTP_SC" scope="axis2" type="STRING" value="201"/>
+                    <property name="HTTP_SC_DESC" scope="axis2" type="STRING" value="Created"/>
+                    <payloadFactory description="Response Transformation" media-type="json">
+                        <format> 
+						{
+                         "CelTroubleTicketIntegration": 
+						  {
+                            "Id": "$1",
+                            "SRNumber": "$2",
+                            "Status": "$3"
+                          }
+                        }
+                        </format>
+                        <args>
+                            <arg evaluator="xml" expression="string(//TTCreate_Output/ListOfCeltroubleticketintegration/CelTroubleTicketIntegration/Id)" literal="true" xmlns:xsdLocal="http://www.celcom.com/IntegrationEnquiry"/>
+                            <arg evaluator="xml" expression="string(//TTCreate_Output/ListOfCeltroubleticketintegration/CelTroubleTicketIntegration/SRNumber)" literal="true" xmlns:xsdLocal="http://www.celcom.com/IntegrationEnquiry"/>
+                            <arg evaluator="xml" expression="string(//TTCreate_Output/ListOfCeltroubleticketintegration/CelTroubleTicketIntegration/Status)" literal="true" xmlns:xsdLocal="http://www.celcom.com/IntegrationEnquiry"/>
+                        </args>
+                    </payloadFactory>
+                    <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+                    <respond/>
+                </else>
+            </filter>
+        </outSequence>
+        <faultSequence>
+            <property name="HTTP_SC" scope="axis2" type="STRING" value="400"/>
+            <property name="HTTP_SC_DESC" scope="axis2" type="STRING" value="Bad Request"/>
+            <log category="ERROR" description="Entering Error Sequence" level="full">
+                <property name="Entering_error_seq" value="Entering Error Sequence"/>
+            </log>
+            <property name="messageId" scope="default" type="STRING" value="SVC0002"/>
+            <property name="text" scope="default" type="STRING" value="Error Calling SouthBound"/>
+            <sequence description="" key="CTTErrorResponseSequence"/>
+            <respond/>
+        </faultSequence>
+    </resource>
+    <resource methods="GET" uri-template="/getctt">
+        <inSequence>
+            <log separator=",">
+                <property name="InputPayload" value="Received Request From Partner"/>
+            </log>
+            <property expression="string(get-property('query.param.srnumber'))" name="srnumber" scope="default" type="STRING"/>
+            <script function="ValidategetCTT" key="gov:datamapper/CTTvalidation.js" language="js"/>
+            <log>
+                <property expression="get-property('query.param.srnumber')" name="property_name"/>
+            </log>
+            <filter description="" regex="false" source="$ctx:isValidgetCtt">
+                <then>
+                    <property name="HTTP_SC" scope="axis2" type="STRING" value="400"/>
+                    <property name="HTTP_SC_DESC" scope="axis2" type="STRING" value="Bad Request"/>
+                    <property name="messageId" scope="default" type="STRING" value="SVC0001"/>
+                    <property name="text" scope="default" type="STRING" value="Missing Mandaratory Paremter"/>
+                    <sequence key="CTTErrorResponseSequence"/>
+                    <respond/>
+                </then>
+                <else>
+                    <payloadFactory description="XMLPayload" media-type="xml">
+                        <format>
+                            <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:srt="http://osb.celcom.com/SRTTListRetrieveWSDL/">
+                                <soapenv:Header/>
+                                <soapenv:Body>
+                                    <srt:CelQueryPage_Input>
+                                        <srt:ListOfCeleaigenericservicerequest>
+                                            <!--Optional:-->
+                                            <srt:CelEaiGenericServiceRequest>
+                                                <srt:ReferenceNumber>$1</srt:ReferenceNumber>
+                                            </srt:CelEaiGenericServiceRequest>
+                                        </srt:ListOfCeleaigenericservicerequest>
+                                    </srt:CelQueryPage_Input>
+                                </soapenv:Body>
+                            </soapenv:Envelope>
+                        </format>
+                        <args>
+                            <arg evaluator="xml" expression="$ctx:srnumber" literal="true"/>
+                        </args>
+                    </payloadFactory>
+                    <header name="SOAPAction" scope="transport" value="http://www.webserviceX.NET/GetWeather"/>
+                    <property name="messageType" scope="axis2" type="STRING" value="application/text+xml"/>
+                    <property name="HTTP_METHOD" scope="axis2" type="STRING" value="GET"/>
+                    <property action="remove" name="REST_URL_POSTFIX" scope="axis2"/>
+                    <send>
+                        <endpoint key="QueryCTTEndpoint"/>
+                    </send>
+                </else>
+            </filter>
+        </inSequence>
+        <outSequence>
+            <!-- <property name="messageId" scope="default" type="STRING" value="SVC0001"/>
+                    <property name="text" scope="default" type="STRING" value="Error from M2M"/>
+                    <sequence key="eSimErrorResponseSequence"/> -->
+            <!-- Changes Starts -->
+            <log>
+                <property name="property_name" value="Entered into OutSequence"/>
+            </log>
+            <xslt key="CTTNameSpaceRemovalFromResponseXSLT"/>
+            <log level="full" separator=","/>
+            <filter description="" regex="^$" source="string(//CelQueryPage_Output/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Id)">
+                <then>
+                    <log>
+                        <property name="property_name" value="Entered into Filter Failure path"/>
+                    </log>
+                    <property name="HTTP_SC" scope="axis2" type="STRING" value="400"/>
+                    <property name="HTTP_SC_DESC" scope="axis2" type="STRING" value="Bad Request"/>
+                    <property expression="fn:concat(SVC0099-,string(//fault/errorCode))" name="messageId" scope="default" type="STRING"/>
+                    <property expression="string(//fault/reason)" name="text" scope="default" type="STRING"/>
+                    <sequence key="CTTErrorResponseSequence"/>
+                    <respond/>
+                </then>
+                <else>
+                    <log separator=",">
+                        <property name="property_name" value="Entered into Filter Sucesspath"/>
+                    </log>
+                    <datamapper config="gov:datamapper/QueryCTTMapping.dmc" inputSchema="gov:datamapper/QueryCTTMapping_inputSchema.json" inputType="XML" outputSchema="gov:datamapper/QueryCTTMapping_outputSchema.json" outputType="JSON"/>
+                    <respond/>
+                </else>
+            </filter>
+        </outSequence>
+        <faultSequence>
+            <property name="HTTP_SC" scope="axis2" type="STRING" value="400"/>
+            <property name="HTTP_SC_DESC" scope="axis2" type="STRING" value="Bad Request"/>
+            <property name="messageId" scope="default" type="STRING" value="SVC0002"/>
+            <property name="text" scope="default" type="STRING" value="Error calling SouthBound API"/>
+            <sequence key="CTTErrorResponseSequence"/>
+            <respond/>
+        </faultSequence>
+    </resource>
+</api>

@@ -1,0 +1,118 @@
+{
+  "$schema" : "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "attributes" : {
+    "ErrorCode" : {
+      "id" : "http://wso2jsonschema.org/ErrorCode",
+      "type" : "null"
+    },
+    "ErrorMessage" : {
+      "id" : "http://wso2jsonschema.org/ErrorMessage",
+      "type" : "null"
+    }
+  },
+  "id" : "http://wso2jsonschema.org",
+  "title" : "CelQueryPage_Output",
+  "type" : "object",
+  "properties" : {
+    "LastPage" : {
+      "id" : "http://wso2jsonschema.org/LastPage",
+      "type" : "boolean"
+    },
+    "ListOfCeleaigenericservicerequestout" : {
+      "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout",
+      "type" : "object",
+      "properties" : {
+        "CelEaiGenericServiceRequest" : {
+          "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest",
+          "type" : "object",
+          "properties" : {
+            "Id" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Id",
+              "type" : "string"
+            },
+            "Created" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Created",
+              "type" : "string"
+            },
+            "AccountId" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/AccountId",
+              "type" : "string"
+            },
+            "Area" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Area",
+              "type" : "string"
+            },
+            "ReferenceNumber" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/ReferenceNumber",
+              "type" : "string"
+            },
+            "Region" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Region",
+              "type" : "string"
+            },
+            "ServiceNumber" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/ServiceNumber",
+              "type" : "string"
+            },
+            "RequestedAmount" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/RequestedAmount",
+              "type" : "string"
+            },
+            "Source" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Source",
+              "type" : "string"
+            },
+            "Status" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Status",
+              "type" : "string"
+            },
+            "Sub-Area" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Sub-Area",
+              "type" : "string"
+            },
+            "Type" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Type",
+              "type" : "string"
+            },
+            "Owner" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/Owner",
+              "type" : "string"
+            },
+            "OutletId" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/OutletId",
+              "type" : "string"
+            },
+            "SRAccountID" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/SRAccountID",
+              "type" : "string"
+            },
+            "SRAccountType" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/SRAccountType",
+              "type" : "string"
+            },
+            "SRAging" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/SRAging",
+              "type" : "string"
+            },
+            "OwnerGroup" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/OwnerGroup",
+              "type" : "string"
+            },
+            "CreatorFullName" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/CreatorFullName",
+              "type" : "string"
+            },
+            "OwnerFullName" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/OwnerFullName",
+              "type" : "string"
+            },
+            "CreatedByLogin" : {
+              "id" : "http://wso2jsonschema.org/ListOfCeleaigenericservicerequestout/CelEaiGenericServiceRequest/CreatedByLogin",
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

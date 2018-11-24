@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="CTT" groupId="com.example.TTproject.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/CTT.xml</file>
+    </artifact>
+    <artifact name="CTTErrorResponseSequence" groupId="com.example.TTproject.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/CTTErrorResponseSequence.xml</file>
+    </artifact>
+    <artifact name="CreateCTTEndPoint" groupId="com.example.TTproject.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/CreateCTTEndPoint.xml</file>
+    </artifact>
+    <artifact name="CTTNameSpaceRemovalFromResponseXSLT" groupId="com.example.TTproject.local-entry" version="1.0.0" type="synapse/local-entry" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/local-entries/CTTNameSpaceRemovalFromResponseXSLT.xml</file>
+    </artifact>
+    <artifact name="QueryCTTEndpoint" groupId="com.example.TTproject.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/QueryCTTEndpoint.xml</file>
+    </artifact>
+</artifacts>

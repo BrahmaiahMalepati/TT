@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="CreateCTTEndPoint" xmlns="http://ws.apache.org/ns/synapse">
+    <wsdl port="TTCreateWSDL_Port" service="TTCreateWSDL_Service" uri="http://sitc3-osb.celcom.com.my:8101/Telco_OSB_Impl/TTCreateWSDLReceiver?wsdl"/>
+</endpoint>

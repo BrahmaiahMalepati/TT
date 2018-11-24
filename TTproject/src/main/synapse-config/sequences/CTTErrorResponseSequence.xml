@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="CTTErrorResponseSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <payloadFactory description="ErrorPayload" media-type="json">
+        <format>{"requestError": {"serviceException": {&#xd;
+   "messageId": "$1",&#xd;
+   "text": "$2"&#xd;
+}}}</format>
+        <args>
+            <arg evaluator="xml" expression="get-property('messageId')"/>
+            <arg evaluator="xml" expression="get-property('text')"/>
+        </args>
+    </payloadFactory>
+</sequence>

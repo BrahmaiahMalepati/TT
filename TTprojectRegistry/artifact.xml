@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="CreateCTT" groupId="com.example.TTprojectRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>CreateCTT.dmc</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+    <artifact name="CreateCTT_inputSchema" groupId="com.example.TTprojectRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>CreateCTT_inputSchema.json</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+    <artifact name="CreateCTT_outputSchema" groupId="com.example.TTprojectRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>CreateCTT_outputSchema.json</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+    <artifact name="CTTvalidation" groupId="com.example.TTprojectRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>CTTvalidation.js</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>application/javascript</mediaType>
+        </item>
+    </artifact>
+    <artifact name="QueryCTTMapping" groupId="com.example.TTprojectRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>QueryCTTMapping.dmc</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+    <artifact name="QueryCTTMapping_inputSchema" groupId="com.example.TTprojectRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>QueryCTTMapping_inputSchema.json</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+    <artifact name="QueryCTTMapping_outputSchema" groupId="com.example.TTprojectRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>QueryCTTMapping_outputSchema.json</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+</artifacts>
